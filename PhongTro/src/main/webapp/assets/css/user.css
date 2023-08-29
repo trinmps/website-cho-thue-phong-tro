@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.list-links > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px dashed #eee;
+}
+.list-links > li > h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  width: 100%;
+}
+.list-links > li:last-of-type {
+  border-bottom: 0;
+}
+.list-links.price > li,
+.list-links.acreage > li {
+  width: 50%;
+  float: left;
+}
+.list-links > li:before {
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(../images/chevron-right.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  opacity: 0.3;
+}
+.list-links > li a {
+	text-decoration:none;
+  padding: 5px 0;
+  display: inline-flex;
+  align-items: center;
+  color: #333;
+  width: 100%;
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.list-links > li .count {
+  color: #aaa;
+  margin-left: 5px;
+  float: right;
+  font-size: 0.9rem;
+}
+.list-links > li.sub {
+  margin-left: 15px;
+}
+.list-links > li a:hover {
+  color: #f60;
+}
